@@ -23,4 +23,4 @@ jobs:
         run: python --version
       - name: Run flake8  #uruchomienie biblioteki flake8
         run: |
-          find . -name "*.py" -exec flake8 {} +
+          find . -type f -name "*.py" -print0 | xargs -0 flake8
