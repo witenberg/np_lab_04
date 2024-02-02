@@ -24,3 +24,8 @@ jobs:
       - name: Run flake8  #uruchomienie biblioteki flake8
         run: |
           flake8 . > flake8_output.txt 2>&1
+      - name: Upload flake8 output
+        uses: actions/upload-artifact@v2
+        with:
+          name: flake8_output
+          path: flake8_output.txt
