@@ -1,0 +1,18 @@
+name: check_python_version  #nazwa
+on:
+  push: 
+    branches:
+      - main  #wykonuje sie tylko kiedy push na te galaz
+jobs:
+  build:
+    runs-on: ubuntu-latest  #wykona sie na najnowszym ubuntu
+    steps:
+      - uses: actions/checkout@v4  #konfiguracja srodowiska
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'  #ustawienie wersji pythona
+      - name: Update pip  #aktualizacja pip
+        run: python -m pip install --upgrade pip
+      - name: Display Python version  #wypisanie zaktualizowanej wersji
+        run: python --version
