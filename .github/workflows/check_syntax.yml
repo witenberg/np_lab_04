@@ -22,4 +22,5 @@ jobs:
       - name: Display Python version  #wyswietlenie aktualnej wersji pythona
         run: python --version
       - name: Run flake8  #uruchomienie biblioteki flake8
-        run: flake8 ./*.py
+        run: |
+          find . -name "*.py" -exec flake8 {} +
