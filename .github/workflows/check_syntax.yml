@@ -22,4 +22,4 @@ jobs:
       - name: Display Python version  #wyswietlenie aktualnej wersji pythona
         run: python --version
       - name: Run flake8  #uruchomienie biblioteki flake8
-        run: flake8 --verbose app_zad1.py
+        run: flake8 --verbose ./app_zad1.py
