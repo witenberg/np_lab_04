@@ -22,4 +22,4 @@ if __name__ == "__main__":
     print(f"Dodawanie: {add_numbers(num1, num2)}")
     print(f"Odejmowanie: {subtract_numbers(num1, num2)}")
     print(f"Mnożenie: {multiply_numbers(num1, num2)}")
-    
+
