@@ -32,4 +32,6 @@ jobs:
      # - name: Run flake8  #uruchomienie flake8
       #  run: flake8 -v app.py
       - name: Run unittest  #uruchomienie unittest
-        run: python -m unittest test.py
+        run: python -m unittest discover -s -v -p test.py
+        env:
+          PYTHONPATH: app.py
