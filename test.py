@@ -36,9 +36,9 @@ class TestMathFunctions(unittest.TestCase):
 
     self.assertEqual(divide_numbers(0, 5), 0.0)
 
-  with self.assertRaises(ValueError):
+    with self.assertRaises(ValueError):
 
-    divide_numbers(5, 0)
+      divide_numbers(5, 0)
 
 if __name__ == "__main__":
 
