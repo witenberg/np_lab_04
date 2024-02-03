@@ -24,4 +24,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run flake8  #uruchomienie biblioteki flake8
-        run: flake8 -v app_zad2.py
+        run: flake8 -v
